@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} product {% endblock title %}
+{% block productactive %}{% endblock productactive %}
+{% block body %}  <div class="container">
+
+
+
+
+<h2>Popular products</h2>
+{% for product in allProduct %}
+
+
+
+
+<div class="container my-3">
+<div class="product-post">
+        <h2 class="blog-post-title">{{product.name}}</h2>
+        <p class="blog-post-meta">{{product.timeStamp}}  <a href="#">{{product.weight}}</a></p>
+
+        <p>{{product.price}}</p>
+        <hr>
+      </div>
+      </div> 
+        
+
+        {% endfor %}  
+      </div>{% endblock body %}
+
+     

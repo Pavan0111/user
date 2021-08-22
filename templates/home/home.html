@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} home {% endblock title %}
+{% block homeactive %}{% endblock homeactive %}
+{% block body %} 
+    <div class="container-fluid" style="background-color: grey;">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: red;">
+                    <div class="card-body">
+                        <h4>Post</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'post' %}">Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+     <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: green;">
+                    <div class="card-body">
+                        <h4>Product</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'product' %}">Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+      <footer class="footer mt-auto py-3" style="background-color: darkblue;">
+  <div class="container">
+      <code>
+          <h5 class="text-center text-white">User</h5>
+      </code>
+
+  </div>
+</footer>
+     
+
+{% endblock body %}

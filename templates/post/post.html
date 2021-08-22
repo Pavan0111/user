@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} post {% endblock title %}
+{% block postactive %}{% endblock postactive %}
+{% block body %}  <div class="container">
+
+
+
+<div class="container">
+<h2>Popular Blogposts</h2>
+{% for post in allPosts %}
+
+
+
+
+
+<div class="container my-3">
+<div class="blog-post">
+        <h2 class="blog-post-title">{{post.user}}</h2>
+        <p class="blog-post-meta">{{post.timeStamp}}  <a href="#">{{post.text}}</a></p>
+
+        <p>{{post.content}}</p>
+        <hr>
+      </div>
+      </div> 
+        {% endfor %}  
+      </div>{% endblock body %}
+
+     
